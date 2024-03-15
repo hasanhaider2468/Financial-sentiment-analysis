@@ -14,7 +14,8 @@ In this project, I seek to evaluate the sentiment analysis of several different 
 - Potential sentence subject recoginition:
     - By tokenizing each of these sentences and determining their part of speech through the function nltk.pos_tag(), I was able to determine all forms of nouns in each of these sentences.
     - By merging with previous dataframe, I now had information regarding the polarities, the actual sentence itself, and potential sentence subjects.
-    
+    ![Screenshot 2024-03-15 042609](https://github.com/hasanhaider2468/Financial-sentiment-analysis/assets/125958166/127428fe-7887-4485-8af2-564ec5fd91f2)
+
 - Determination of Words with intense negative polarity
     - By finding all sentences with an overall compound polarity below -.4 
     - By splitting each sentence into its own token and determining the individual polarities of each term, I found the polarity of relatively intense negative words (words with a polarity of <= -.4
