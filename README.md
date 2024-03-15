@@ -18,14 +18,16 @@ In this project, I seek to evaluate the sentiment analysis of several different 
 
 - Determination of Words with intense negative polarity
     - By finding all sentences with an overall compound polarity below -.4 
-    - By splitting each sentence into its own token and determining the individual polarities of each term, I found the polarity of relatively intense negative words (words with a polarity of <= -.4
-    - This would then be added into its own dataframe
-    
+    - By splitting each sentence into its own token and determining the individual polarities of each term, I found the polarity of relatively intense negative words (words with a polarity of <= -.4)
+    - This would then be added into its own sorted dataframe (smallest to largest negative polarity)
+    ![Screenshot 2024-03-15 043127](https://github.com/hasanhaider2468/Financial-sentiment-analysis/assets/125958166/6ab9314f-79a1-4103-b60f-3b7b66c0a56c)
+
 - Determination of Words with intense positive polarity
     - By finding all sentences with an overall compound polarity above .4 
-    - By splitting each sentence into its own token and determining the individual polarities of each term, I found the polarity of relatively intense positive words (words with a polarity of >= .4
-    - This would then be added into its own dataframe
-    
+    - By splitting each sentence into its own token and determining the individual polarities of each term, I found the polarity of relatively intense positive words (words with a polarity of >= .4)
+    - This would then be added into its own sorted dataframe (smallest to largest positive polarity)
+    ![Screenshot 2024-03-15 043419](https://github.com/hasanhaider2468/Financial-sentiment-analysis/assets/125958166/5aea2528-16e1-474a-84d6-531e224a84b1)
+
 # Analysis and Result
 
 I chose the value of -.4 and .4 as my filtering critera as I found this value satisifed two particular categories. The first was that this threshold ensured I did not exclusively retain words with extremely intense polarity. These words included words such as "kill", "cancer", and "disaster" for the negative polarities and words such as "best", "love", and "excellent" for the positive polarities. Although intense, these terms may not always help illustrate the proper image of the overall sentence polarity in a financial context. However, terms such as "decline", "crashes", and "boycotting" or terms such as "support", "approves", and "secured" (which were all terms with relatively lower polarity compared to terms such as cancer or best) would be more relavent in the financial world as meaningful terminology. Additionally, this filtering critera ensured I retained a sufficient amount of data. 
